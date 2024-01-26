@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= type  %></title>
+</head>
+<body>
+    <ul>
+        <% data.forEach(animal => { %>
+          <li>
+            <%= animal.name %> 
+            <a href="/<%= type %>/<%= animal.name %>">Profile</a>
+          </li>
+        <% }); %>
+      </ul>
+</body>
+</html>
